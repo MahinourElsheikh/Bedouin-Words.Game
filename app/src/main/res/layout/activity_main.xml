@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dunes"
+    tools:context="com.example.mahinour.bedouins.MainActivity">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/exitButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/close"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:clickable="false"
+                android:onClick="PressX"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:src="@drawable/camel"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="واحة"
+            android:textAlignment="center"
+            android:textSize="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="لعبة التعرّف على التراث البدوي"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="خروج"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded"
+                android:onClick="ExitGame"
+
+
+                android:layout_margin="1dp"
+                />
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="البداية"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded"
+                android:onClick="enterGame"
+
+                android:layout_margin="1dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sand"
+    tools:context="com.example.mahinour.bedouins.Main3Activity">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imageButton"
+        android:onClick="PressX"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="المراحل"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/step1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="10"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/step2"
+        android:layout_toStartOf="@+id/step2" />
+
+    <ImageView
+        android:id="@+id/step2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="20"
+        android:layout_above="@+id/step1"
+        android:layout_alignRight="@+id/step3"
+        android:layout_alignEnd="@+id/step3"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp" />
+
+    <ImageView
+        android:id="@+id/step3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="30"
+        android:layout_above="@+id/step2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/oasis1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/nature"
+        android:rotation="0"
+
+        android:layout_below="@+id/step5"
+        android:layout_toRightOf="@+id/step5"
+        android:layout_toEndOf="@+id/step5" />
+    <ImageView
+        android:id="@+id/oasis2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/nature"
+        android:rotation="0"
+
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+
+    <ImageView
+        android:id="@+id/step4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="40"
+        android:layout_above="@+id/step3"
+        android:layout_alignLeft="@+id/step3"
+        android:layout_alignStart="@+id/step3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+    <ImageView
+        android:id="@+id/step5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="20"
+
+        android:layout_above="@+id/step4"
+        android:layout_toRightOf="@+id/step3"
+        android:layout_toEndOf="@+id/step3"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+    <ImageView
+        android:id="@+id/step6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="-10"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/step5"
+        android:layout_alignLeft="@+id/step5"
+        android:layout_alignStart="@+id/step5" />
+    <ImageView
+        android:id="@+id/step7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="-30"
+        android:layout_above="@+id/step6"
+        android:layout_toRightOf="@+id/step3"
+        android:layout_toEndOf="@+id/step3" />
+    <ImageView
+        android:id="@+id/step8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="-50"
+        android:layout_above="@+id/step7"
+        android:layout_toLeftOf="@+id/step7"
+        android:layout_toStartOf="@+id/step7" />
+    <ImageView
+        android:id="@+id/step9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/steps"
+        android:rotation="-50"
+        android:layout_above="@+id/step8"
+        android:layout_toLeftOf="@+id/step8"
+        android:layout_toStartOf="@+id/step8" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlebutton"
+        android:text="۲"
+        android:textSize="30dp"
+        android:layout_below="@+id/step6"
+        android:layout_toLeftOf="@+id/step7"
+        android:layout_alignLeft="@+id/step3"
+        android:layout_alignStart="@+id/step3" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlebutton"
+        android:text="۱"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/step3"
+        android:layout_alignLeft="@+id/oasis1"
+        android:layout_alignStart="@+id/oasis1"
+        android:layout_alignRight="@+id/oasis1"
+        android:layout_alignEnd="@+id/oasis1"
+        android:onClick="enterlevel1"/>
+
+</RelativeLayout>
